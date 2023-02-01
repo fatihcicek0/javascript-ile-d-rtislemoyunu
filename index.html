@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dörtislem.io</title>
+  <style>
+    body {
+      background-color: lightblue;
+    }
+
+    #game {
+      width: 500px;
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      margin: auto;
+      margin-top: 40px;
+      font-family: sans-serif;
+      border: solid 1px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin-bottom: 70px;
+    }
+
+    #number1,
+    #number2,
+    #operator {
+      font-family: sans-serif;
+      padding: 20px;
+      font-size: 25px;
+      position: relative;
+
+    }
+
+    #result {
+      width: 100px;
+      height: 30px;
+      padding: 3px;
+      font-family: sans-serif;
+      font-size: 20px;
+      margin: 12px;
+    }
+
+    #answer {
+      width: 100px;
+      height: 50px;
+      border: solid 1px;
+      border-radius: 15px;
+      background-color: darkgreen;
+      font-size: 17px;
+      margin: 10px;
+      color: white;
+    }
+
+    #answer:hover {
+      background-color: blue;
+    }
+
+    #True,
+    #False {
+      margin-top: 15px;
+      padding: 15px;
+      display: inline-block;
+      font-size: 25px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    #True {
+      background-color: green;
+
+    }
+
+    #False {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="game">
+    <h1>Dört İşlem Oyunu</h1>
+    <span id="number1">0</span>
+    <span id="operator">+</span>
+    <span id="number2">0</span>
+    <span>=</span>
+    <input type="text" id="result">
+    <button id="answer" type="button">cevapla</button>
+    <div style="clear:both"></div>
+    <div id="True">0</div>
+    <div id="False">0</div>
+    <div style="clear:both"></div>
+  </div>
+  <script src="app.js">
+
+
+  </script>
+</body>
+
+</html>
